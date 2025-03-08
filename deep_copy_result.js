@@ -1,3 +1,26 @@
+export {
+    man,
+    manFullCopy,
+    numbers,
+    numbersFullCopy,
+    man1,
+    man1FullCopy,
+    man2,
+    man2FullCopy,
+    man3,
+    man3FullCopy,
+    man4,
+    man4FullCopy,
+    people,
+    peopleFullCopy,
+    man5,
+    man5FullCopy,
+    man6,
+    man6FullCopy,
+    man7,
+    man7FullCopy,
+}
+
 // links to watch theory
 // https://www.youtube.com/watch?v=6napu-MGQDo&list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8&index=47
 // https://www.youtube.com/watch?v=I8LNJpG60vI&feature=youtu.be
@@ -44,7 +67,7 @@ let man2FullCopy = {...man2, friends: [...man2.friends]};
 
 
 
-// 5 Array of objects
+// 5. Array of objects
 let people = [
     {name: "Peter", age: 30},
     {name: "Steven", age: 32},
@@ -55,7 +78,7 @@ let peopleFullCopy = people.map( item => ({...item}) );
 
 
 
-// 6 Array of objects inside object
+// 6. Array of objects inside object
 let man3 = {
     name: 'John',
     age: 28,
@@ -70,7 +93,7 @@ let man3FullCopy = { ...man3, friends: man3.friends.map(item => ({...item})) };
 
 
 
-// 7 Object inside an object, inside an object
+// 7. Object inside an object, inside an object
 let man4 = {
     name: 'John',
     age: 28,
@@ -96,7 +119,7 @@ let man4FullCopy = {
 
 
 
-// 8 Array of objects inside object -> object
+// 8. Array of objects inside object -> object
 let man5 = {
     name: 'John',
     age: 28,
@@ -127,7 +150,7 @@ let man5FullCopy = {
 
 
 
-// 9 Object inside an object -> array -> object ->  object
+// 9. Object inside an object -> array -> object ->  object
 let man6 = {
     name: 'John',
     age: 28,
@@ -175,7 +198,7 @@ let man6FullCopy = {
 
 
 
-// 10 Array of objects inside an object -> object -> array -> object ->  object
+// 10. Array of objects inside an object -> object -> array -> object ->  object
 let man7 = {
     name: 'John',
     age: 28,
